@@ -219,6 +219,7 @@ public class Activos extends javax.swing.JInternalFrame {
         setPreferredSize(new java.awt.Dimension(1200, 800));
         setVisible(false);
 
+        jTable1.setBackground(new java.awt.Color(247, 243, 198));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
@@ -239,6 +240,7 @@ public class Activos extends javax.swing.JInternalFrame {
 
         jPanel1.setLayout(new java.awt.GridLayout(1, 0));
 
+        jButton1.setBackground(new java.awt.Color(238, 230, 139));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/malbino/img/nuevo.png"))); // NOI18N
         jButton1.setText("Nuevo Activo");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -248,6 +250,7 @@ public class Activos extends javax.swing.JInternalFrame {
         });
         jPanel1.add(jButton1);
 
+        jButton2.setBackground(new java.awt.Color(238, 230, 139));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/malbino/img/upload.png"))); // NOI18N
         jButton2.setText("Subir Foto");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -257,6 +260,7 @@ public class Activos extends javax.swing.JInternalFrame {
         });
         jPanel1.add(jButton2);
 
+        jButton3.setBackground(new java.awt.Color(238, 230, 139));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/malbino/img/ver.png"))); // NOI18N
         jButton3.setText("Ver Foto");
         jButton3.addActionListener(new java.awt.event.ActionListener() {

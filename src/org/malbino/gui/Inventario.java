@@ -154,6 +154,7 @@ public class Inventario extends javax.swing.JInternalFrame {
         jPanel2 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(139, 243, 35));
         setClosable(true);
         setDefaultCloseOperation(javax.swing.WindowConstants.HIDE_ON_CLOSE);
         setIconifiable(true);
@@ -163,6 +164,8 @@ public class Inventario extends javax.swing.JInternalFrame {
         setPreferredSize(new java.awt.Dimension(1200, 800));
         setVisible(false);
 
+        jTable1.setAutoCreateRowSorter(true);
+        jTable1.setBackground(new java.awt.Color(139, 243, 35));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -189,6 +192,7 @@ public class Inventario extends javax.swing.JInternalFrame {
         });
         jPanel1.add(jButton2, java.awt.BorderLayout.EAST);
 
+        jTextField1.setBackground(new java.awt.Color(212, 238, 181));
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -200,6 +204,7 @@ public class Inventario extends javax.swing.JInternalFrame {
 
         jPanel2.setLayout(new java.awt.BorderLayout());
 
+        jButton1.setBackground(new java.awt.Color(212, 238, 181));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/malbino/img/impresora.png"))); // NOI18N
         jButton1.setText("Imprimir Inventario");
         jButton1.addActionListener(new java.awt.event.ActionListener() {

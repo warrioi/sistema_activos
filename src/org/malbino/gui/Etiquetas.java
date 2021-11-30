@@ -152,10 +152,11 @@ public class Etiquetas extends javax.swing.JInternalFrame {
         setIconifiable(true);
         setMaximizable(true);
         setResizable(true);
-        setTitle("Activos");
+        setTitle("Etiquetas");
         setPreferredSize(new java.awt.Dimension(1200, 800));
         setVisible(false);
 
+        jTable1.setBackground(new java.awt.Color(235, 187, 156));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
@@ -174,6 +175,7 @@ public class Etiquetas extends javax.swing.JInternalFrame {
 
         getContentPane().add(jScrollPane1, java.awt.BorderLayout.CENTER);
 
+        jButton1.setBackground(new java.awt.Color(247, 217, 198));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/malbino/img/impresora.png"))); // NOI18N
         jButton1.setText("Imprimir Etiquetas");
         jButton1.addActionListener(new java.awt.event.ActionListener() {

@@ -66,6 +66,7 @@ public class Custodios extends javax.swing.JInternalFrame {
         setTitle("Custodios");
         setPreferredSize(new java.awt.Dimension(800, 600));
 
+        jTable1.setBackground(new java.awt.Color(183, 249, 178));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
@@ -84,6 +85,7 @@ public class Custodios extends javax.swing.JInternalFrame {
 
         getContentPane().add(jScrollPane1, java.awt.BorderLayout.CENTER);
 
+        jButton1.setBackground(new java.awt.Color(103, 241, 92));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/malbino/img/nuevo.png"))); // NOI18N
         jButton1.setText("Nuevo Custodio");
         jButton1.addActionListener(new java.awt.event.ActionListener() {

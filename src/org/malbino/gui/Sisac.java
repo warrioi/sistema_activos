@@ -135,8 +135,11 @@ public class Sisac extends javax.swing.JFrame {
 
         getContentPane().add(jDesktopPane2, java.awt.BorderLayout.CENTER);
 
+        jToolBar1.setBackground(new java.awt.Color(86, 136, 232));
+        jToolBar1.setForeground(new java.awt.Color(170, 174, 235));
         jToolBar1.setRollover(true);
 
+        jButton1.setBackground(new java.awt.Color(64, 163, 167));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/malbino/img/categorias.png"))); // NOI18N
         jButton1.setToolTipText("Categorias");
         jButton1.setFocusable(false);
@@ -149,6 +152,7 @@ public class Sisac extends javax.swing.JFrame {
         });
         jToolBar1.add(jButton1);
 
+        jButton2.setBackground(new java.awt.Color(64, 163, 167));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/malbino/img/ubicaciones.png"))); // NOI18N
         jButton2.setToolTipText("Ubicaciones");
         jButton2.setFocusable(false);
@@ -161,6 +165,7 @@ public class Sisac extends javax.swing.JFrame {
         });
         jToolBar1.add(jButton2);
 
+        jButton3.setBackground(new java.awt.Color(64, 163, 167));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/malbino/img/custodios.png"))); // NOI18N
         jButton3.setToolTipText("Custodios");
         jButton3.setFocusable(false);
@@ -174,6 +179,7 @@ public class Sisac extends javax.swing.JFrame {
         jToolBar1.add(jButton3);
         jToolBar1.add(jSeparator1);
 
+        jButton4.setBackground(new java.awt.Color(64, 163, 167));
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/malbino/img/activos.png"))); // NOI18N
         jButton4.setToolTipText("Activos");
         jButton4.setFocusable(false);
@@ -186,7 +192,9 @@ public class Sisac extends javax.swing.JFrame {
         });
         jToolBar1.add(jButton4);
 
+        jButton5.setBackground(new java.awt.Color(64, 163, 167));
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/malbino/img/etiquetas.png"))); // NOI18N
+        jButton5.setToolTipText("Etiquetas");
         jButton5.setFocusable(false);
         jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -198,7 +206,9 @@ public class Sisac extends javax.swing.JFrame {
         jToolBar1.add(jButton5);
         jToolBar1.add(jSeparator2);
 
+        jButton6.setBackground(new java.awt.Color(64, 163, 167));
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/malbino/img/inventario.png"))); // NOI18N
+        jButton6.setToolTipText("Inventario");
         jButton6.setFocusable(false);
         jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton6.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -211,7 +221,9 @@ public class Sisac extends javax.swing.JFrame {
 
         getContentPane().add(jToolBar1, java.awt.BorderLayout.PAGE_START);
 
-        jMenu1.setText("Archivo");
+        jMenuBar1.setBackground(new java.awt.Color(210, 9, 131));
+
+        jMenu1.setText("Salir");
 
         jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/malbino/img/salir.png"))); // NOI18N
         jMenuItem1.setText("Salir");
@@ -316,7 +328,13 @@ public class Sisac extends javax.swing.JFrame {
         if (categorias.isVisible()) {
             categorias.setVisible(Boolean.FALSE);
         } else {
-            categorias.actualizarLista();
+            
+            try{
+                categorias.setMaximum(true);
+            }catch(PropertyVetoException ex){
+               Logger.getLogger(Sisac.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            //categorias.actualizarLista();
 
             categorias.setVisible(true);
         }
@@ -341,7 +359,12 @@ public class Sisac extends javax.swing.JFrame {
         if (categorias.isVisible()) {
             categorias.setVisible(Boolean.FALSE);
         } else {
-            categorias.actualizarLista();
+            //categorias.actualizarLista();
+            try{
+                categorias.setMaximum(true);
+            }catch(PropertyVetoException ex){
+                Logger.getLogger(Sisac.class.getName()).log(Level.SEVERE, null, ex);
+            }
 
             categorias.setVisible(true);
         }
@@ -351,7 +374,12 @@ public class Sisac extends javax.swing.JFrame {
         if (ubicaciones.isVisible()) {
             ubicaciones.setVisible(Boolean.FALSE);
         } else {
-            ubicaciones.actualizarLista();
+            //ubicaciones.actualizarLista();
+            try{
+                ubicaciones.setMaximum(true);
+            }catch(PropertyVetoException ex){
+                Logger.getLogger(Sisac.class.getName()).log(Level.SEVERE, null, ex);
+            }
 
             ubicaciones.setVisible(true);
         }
@@ -361,7 +389,12 @@ public class Sisac extends javax.swing.JFrame {
         if (ubicaciones.isVisible()) {
             ubicaciones.setVisible(Boolean.FALSE);
         } else {
-            ubicaciones.actualizarLista();
+            //ubicaciones.actualizarLista();
+            try{
+                ubicaciones.setMaximum(true);
+            }catch(PropertyVetoException ex){
+                Logger.getLogger(Sisac.class.getName()).log(Level.SEVERE, null, ex);
+            }
 
             ubicaciones.setVisible(true);
         }
@@ -371,7 +404,12 @@ public class Sisac extends javax.swing.JFrame {
         if (custodios.isVisible()) {
             custodios.setVisible(Boolean.FALSE);
         } else {
-            custodios.actualizarLista();
+            //custodios.actualizarLista();
+            try{
+                custodios.setMaximum(true);
+            }catch(PropertyVetoException ex){
+                Logger.getLogger(Sisac.class.getName()).log(Level.SEVERE, null, ex);
+            }
 
             custodios.setVisible(true);
         }
@@ -381,7 +419,12 @@ public class Sisac extends javax.swing.JFrame {
         if (custodios.isVisible()) {
             custodios.setVisible(Boolean.FALSE);
         } else {
-            custodios.actualizarLista();
+            //custodios.actualizarLista(); //modificado
+            try{
+                custodios.setMaximum(true);
+            }catch(PropertyVetoException ex){
+            Logger.getLogger(Sisac.class.getName()).log(Level.SEVERE, null,ex);
+            }
 
             custodios.setVisible(true);
         }
@@ -391,7 +434,7 @@ public class Sisac extends javax.swing.JFrame {
         if (activos.isVisible()) {
             activos.setVisible(Boolean.FALSE);
         } else {
-            activos.actualizarLista();
+            //activos.actualizarLista();
 
             try {
                 activos.setMaximum(true);
@@ -421,7 +464,7 @@ public class Sisac extends javax.swing.JFrame {
         if (etiquetas.isVisible()) {
             etiquetas.setVisible(Boolean.FALSE);
         } else {
-            etiquetas.actualizarLista();
+            //etiquetas.actualizarLista();
 
             try {
                 etiquetas.setMaximum(true);
